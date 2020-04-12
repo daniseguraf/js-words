@@ -1,6 +1,6 @@
 {
   "name": "js-words-test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Filter things",
   "main": "build/index.js",
   "scripts": {
