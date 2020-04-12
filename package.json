@@ -1,5 +1,5 @@
 {
-  "name": "js-words",
+  "name": "js-words-test",
   "version": "1.0.0",
   "description": "Filter things",
   "main": "build/index.js",
@@ -7,7 +7,9 @@
     "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
     "test": "jest",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
   },
   "babel": {
     "presets": [
@@ -31,6 +33,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "jest": "^25.3.0",
+    "np": "^6.2.1",
     "watch": "^1.0.2"
   }
 }
