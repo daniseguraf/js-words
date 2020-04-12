@@ -1,0 +1,36 @@
+{
+  "name": "js-words",
+  "version": "1.0.0",
+  "description": "Filter things",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniseguraf/js-words.git"
+  },
+  "keywords": [
+    "filter"
+  ],
+  "author": "Daniel Segura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniseguraf/js-words/issues"
+  },
+  "homepage": "https://github.com/daniseguraf/js-words#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^25.3.0",
+    "watch": "^1.0.2"
+  }
+}
